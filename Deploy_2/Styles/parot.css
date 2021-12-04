@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+
+html { scroll-behavior: smooth; }
+
+body
+{
+    background-color: whitesmoke;
+    padding: 0%;
+    margin: 0%;
+}
+
+.sidenav
+{
+    background-image: url('/Trees.png');
+    width: 275px;
+    height: 100%;
+    position: fixed;
+    color: white;
+}
+.sidenav .head
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Meow Script', cursive;
+    backdrop-filter: blur(3px);
+    padding: 20px;
+}
+.sidenav a
+{
+    display: block;
+    padding: 20px;
+    padding-left: 30px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    word-spacing: 20px;
+    transition: 0.2s ease-in-out;
+}
+.sidenav a:hover
+{
+    background: linear-gradient(90deg, rgba(245, 245, 245, 0.15), transparent);
+    padding-left: 80px;
+}
+
+section
+{
+    margin-left: 275px;
+    padding: 5%;
+}
+section h3
+{
+    font-family: 'Comfortaa', cursive;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+section p
+{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 19px;
+}
+section a.btn
+{
+    font-size: 60px;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    color: black;
+    transition: 0.1s ease-in-out;
+    margin-left: 2%;
+    margin-top: 2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+section a.btn:hover
+{
+    background-color: #a8c03e;
+    color: white;
+}
+section a
+{
+    transition: 0.1s ease-in-out;
+    color: black;
+    text-decoration: none;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 19px;
+}
+section a:hover
+{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.carton
+{
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 2.5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 241, 39);
+}
+.carton.red { background-color: rgb(255, 68, 68); }
+.carton.green { background-color: rgb(199, 255, 68); }
+
+.codel
+{
+    font-size: 15px;
+    padding: 3px 10px;
+    color: black;
+    background-color: rgb(209, 198, 255);
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.gtab
+{
+    font-weight: bold;
+    transition: 0.15s ease-in-out;
+    text-decoration: none;
+}
+.gtab:hover
+{
+    margin-left: 3%;
+    text-decoration: none;
+    padding: 4px 10px;
+    background-color: #2222221a;
+    border-left: 10px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.foot
+{
+    background-color: rgb(202, 202, 202);
+    text-align: center;
+    text-decoration: none;
+}
+.foot h3
+{
+    text-decoration: none;
+}
+.foot hr
+{
+    border: 1px dashed black;
+}
+.foot a
+{
+    font-family: Tajawal;
+    margin-top: 50px;
+    padding: 12px 12px;
+}
+.foot a:hover
+{
+    text-decoration: none;
+    color: rgb(31, 0, 35);
+}
