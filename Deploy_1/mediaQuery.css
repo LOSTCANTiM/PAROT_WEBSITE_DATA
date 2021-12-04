@@ -1,0 +1,12 @@
+@media screen and (max-width: 1920px) {
+   .infoabout
+   {
+      display: flex;
+   }
+}
+@media screen and (max-width: 700px) {
+   .infoabout
+   {
+      display: block;
+   }
+}
