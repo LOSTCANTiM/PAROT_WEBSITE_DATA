@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PAROT - My Personal Site</title>
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="parot.css">
+   <link rel="stylesheet" href="mediaQuery.css">
+   <link rel="icon" href="siteIco.png">
+   <link rel="stylesheet" href="conde-syntax.css">
+   <script src="https://kit.fontawesome.com/886c724c4b.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</head>
+<body>
+   <div class="navbar">
+      <a href="index.html" class="logo">PAROT</a>
+      <a href="#Tabs">TABS</a>
+      <a href="#Info">ABOUT</a>
+      <a href="#engine">ENGINE</a>
+   </div>
+
+
+   <section class="welcomeView">
+      <h1>Welcome To My Personal Site</h1>
+      <div class="welcomeShow">
+         <p class="welcomeDesc" style="color: white;">//. DESCRIPTION</p>
+         <p>This is a site I just made to learn HTML CSS and JS stuff. But then I decided to use this as of to track my progress in things like the 3D Models, Games I make or even apps I make, also to share the tabs from my guitar cover channel.</p>
+      </div>
+   </section>
+
+   <section class="infoabout" id="Info">
+      <div class="cartonBanner">
+         <i class="fas fa-quote-left"></i>
+         <h1>About Me</h1>
+         <p>Hello there! My name is Vaibhav and some of my hobbies are coding, making games with unity, art, music and playing guitar :D. Also consider joining my <a href="https://discord.gg/HYJvwWpwQX">Discord</a>!</p>
+      </div>
+
+      
+      <div class="cartonBanner">
+         <i class="fab fa-youtube"></i>
+         <h1>My YouTube Channels</h1>
+         <p>Hello, I own 2 youtube channels.My gaming channel where I post clips from my gameplay <a href="https://www.youtube.com/channel/UCi36xtC8ponyduMZ4-oLw4A">LOSTCANTiM</a>. And my personal channel were for now I've only posted my guitar covers <a href="https://www.youtube.com/channel/UCkl6S5OuVird5BR7Sos_uWw">Vaibhav Sharma</a></p>
+      </div>
+
+      
+      <div class="cartonBanner">
+         <i class="fas fa-cube"></i>
+         <h1 id="abg">About PAROT Engine</h1>
+         <p>PAROT Engine is a Game Engine or kind-of game engine im making to learn openGL. Also you can see about it in the <a href="#engine">Engine Tab</a>.</p>
+      </div>
+   </section>
+
+   <section class="tabs" id="Tabs">
+      <h1 style="z-index: 7;">Here are all the guitar TABS available</h1>
+      <a href="https://drive.google.com/file/d/1LQhOHRm7gG3u0L4CNPxqr3cr4-ZkN36k/view">//. Assassin's Creed 2 OST - Ezio's Family</a>
+      <br>
+      <a class="nat" onclick="na()">//. GTA San Andreas - Main Theme</a>
+      <br>
+      <a class="nat" onclick="na()">//. The Last Of Us - Main Theme</a>
+   </section>
+
+   <section id="engine">
+      <h3>PAROT ENGINE</h3>
+      <div class="engine cont">
+         <p class="engine title">
+            Basic Blank Window
+         </p>
+         <pre class="prettyprint lang-pp">
+            #include &ltglad/glad.h&gt
+            #include &ltGLFW/glfw3.h&gt 
+
+            #include &ltiostream&gt
+            
+            const int WIDTH = 800;
+            const int HEIGHT = 800;
+            
+            int main()
+            {
+            	if (!glfwInit)
+            		return -1;
+            	glfwInit();
+            
+            	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+            	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+            	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+            
+            	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "OpenGL Learning", NULL, NULL);
+            	if (!window)
+            		return -1;
+            
+            	glfwMakeContextCurrent(window);
+            	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+            	{
+            		std::cout &lt "Failed to initialize GLAD" &lt std::endl;
+            		return -1;
+            	}
+            	gladLoadGL();
+            
+            	while (!glfwWindowShouldClose(window))
+            	{
+            		glClear(GL_COLOR_BUFFER_BIT);
+            		glClearColor(0.1f, 0.1f, 0.12f, 1.0f);
+               
+            		glfwSwapBuffers(window);
+            		glfwPollEvents();
+            	}
+            
+            	glfwTerminate();
+            	return 0;
+            }
+         </pre>
+      </div>
+   </section>
+
+   <div class="footer">
+      <p style="text-align: center;">PAROT - It is a kind of Personal Name I've given to my hypothetical company</p>
+      <hr>
+      <p style="text-align: center;">SOCIAL MEDIA</p>
+      <a href="https://discord.gg/HYJvwWpwQX"><i class="fab fa-discord"></i> Discord</a>
+      <a href="https://www.instagram.com/vaibhav__sharma__0427/"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.youtube.com/channel/UCi36xtC8ponyduMZ4-oLw4A"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="https://discord.gg/bQD3YTQXrQ"><i class="fab fa-discord"></i> Friend's Discord</a>
+   </div>
+
+   <div id="naDoc">
+      <h3><i class="fas fa-exclamation-circle"></i> </h3>
+      <h3>Sorry the TABS for this song aren't available at this moment</h3>
+      <p>Try contancting me on discord if you need them urgently</p>
+      <button onclick="closena()"><i class="fas fa-times"></i></button>
+   </div>
+</body>
+
+<script>
+   naDoc = document.getElementById("naDoc");
+   function na()
+   {
+      naDoc.style.visibility = 'visible';
+   }
+   function closena()
+   {
+      naDoc.style.visibility = 'hidden';
+   }
+</script>
+</html>
